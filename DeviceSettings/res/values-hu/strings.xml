@@ -13,18 +13,20 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Galaxy S II Beállítások</string>
 
     <string name="category_screen_title">Kijelző</string>
+
+    <string name="screen_colors_title">Színek</string>
+    <string name="panel_gamma_title_head">Kijelző gamma-értéke</string>
+    <string name="panel_gamma_summary_head">Kijelző gamma-érték beállítása</string>
+
     <string name="touchscreen_subcat_title">Érintőképernyő</string>
     <string name="touchscreen_sensitivity_title_head">Érzékenység</string>
     <string name="touchscreen_sensitivity_summary_head">Érintőképernyő érzékenységének beállítása</string>
 
     <string name="touchkey_subcat_title">Érintőgombok</string>
-    <string name="touchkey_light_title_head">Érintőgombok háttérvilágítása</string>
-    <string name="touchkey_light_summary">Bekapcsolja az érintőgombok háttérvilágítását bekapcsolt képernyőnél</string>
     <string name="touchkey_timeout_title_head">Háttérvilágítás időkorlátja</string>
     <string name="touchkey_timeout_summary_head">Háttérvilágítás késleltetése</string>
 
@@ -38,9 +40,6 @@
     <string name="accelerometer_dialog_message">Az érzékelő sikeresen bekalibrálva.</string>
 
     <string name="category_haptic_title">Érintési visszajelzés</string>
-    <string name="vibrator_subcat_title">Rezgés</string>
-    <string name="vibrator_intensity_title_head">Rezgés erőssége</string>
-    <string name="vibrator_intensity_summary_head">Rezgés erősségének beállítása</string>
 
     <string name="category_radio_title">GSM Rádió</string>
     <string name="hspa_title_head">HSPA</string>

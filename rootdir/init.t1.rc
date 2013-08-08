@@ -24,10 +24,6 @@ on init
 on fs
     mount_all /fstab.t1
 
-# j4fs module
-    insmod /system/lib/modules/j4fs.ko
-    mount j4fs /dev/block/mmcblk0p4 /mnt/.lfs
-
 # pvr module
     insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
 
@@ -170,8 +166,8 @@ on boot
 
     chown system system /sys/class/sec/sec_touchkey/enable_disable
     chmod 0660 /sys/class/sec/sec_touchkey/enable_disable
-    chown system system /sys/class/sec/sec_touchkey/force_disable
-    chmod 0660 /sys/class/sec/sec_touchkey/force_disable
+    chown system system /sys/class/sec/sec_touchkey/led_mode
+    chmod 0660 /sys/class/sec/sec_touchkey/led_mode
     chown system system /sys/class/sec/sec_touchkey/notification
     chmod 0660 /sys/class/sec/sec_touchkey/notification
     chown system system /sys/class/sec/sec_touchkey/timeout
@@ -342,12 +338,14 @@ service pvrsrvinit /system/vendor/bin/pvrsrvinit
     class core
     user root
     group root
+    seclabel u:r:pvrsrvinit:s0
     oneshot
 
 service pvrsrvctl /system/vendor/bin/pvrsrvctl_SGX540_120 --start --no-module
     class core
     user root
     group root
+    seclabel u:r:pvrsrvinit:s0
     oneshot
 
 # SMC Service

@@ -13,8 +13,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="panel_gamma_entries">
+        <item>2.2 (Padrão)</item>
+        <item>1.9</item>
+    </string-array>
     <string-array name="touchscreen_sensitivity_entries">
         <item>10</item>
         <item>20</item>
@@ -32,16 +35,14 @@
         <item>5 segundos</item>
         <item>6 segundos</item>
     </string-array>
-    <string-array name="vibrator_intensity_entries">
-        <item>0%</item>
-        <item>25%</item>
-        <item>50% (Padrão)</item>
-        <item>75%</item>
-        <item>100%</item>
-    </string-array>
     <string-array name="hspa_entries">
         <item>Somente UMTS</item>
         <item>Somente HSDPA</item>
         <item>HSDPA + HSUPA</item>
+    </string-array>
+    <string-array name="touchkey_led_mode_entries">
+        <item>Nenhum (desativar luz de fundo)</item>
+        <item>Somente teclas</item>
+        <item>Teclas e tela</item>
     </string-array>
 </resources>
